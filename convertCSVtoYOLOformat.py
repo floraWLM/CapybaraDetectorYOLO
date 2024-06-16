@@ -1,16 +1,36 @@
 import csv
+import os
 
 def main():
-    with open('capybara_dataset/data/test_labels.csv', mode='r') as file:
+    with open('data/train_labels.csv', mode='r') as file:
         csvFile = csv.DictReader(file)
         for row in csvFile:
-            print(row['filename'])
+            print(row['filename'][:-5])
+
+            # Getting all the data
             fileName = row['filename']
-            width = row['width']
-            height = row['height']
-            xMin = row['xmin']
-            xMax = row['xmax']
-            yMin = row['ymin']
-            yMax = row['ymax']
+            width = float(row['width'])
+            height = float(row['height'])
+            xMin = float(row['xmin'])
+            xMax = float(row['xmax'])
+            yMin = float(row['ymin'])
+            yMax = float(row['ymax'])
+            X = str((xMin + xMax) / (2 * width))
+            Y = str(1 - (yMin + yMax) / (2 * height))
+            W = str((xMax - xMin) / width)
+            H = str((yMax - yMin) / height)
+
+            # Creating the new label txt file
+            txtFilePath = "label/train/" + fileName[:-5] + ".txt"
+            print(txtFilePath)
+
+            if os.path.exists(txtFilePath):
+                print("T")
+                with open(txtFilePath, "a") as f:
+                    f.write("0 " + X + " " + Y + " " + W + " " + H + "\n")
+            else:
+                print("F")
+                with open(txtFilePath, "w") as f:
+                    f.write("0 " + X + " " + Y + " " + W + " " + H + "\n")
 
 main()
