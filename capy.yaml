@@ -1,0 +1,7 @@
+path: /Users/lemengwang/Documents/ComputerScience/CapybaraDetectorYOLO/data
+train: images/train
+val: images/val
+
+# Classes
+names:
+0: Capybara

@@ -21,7 +21,7 @@ def main():
             H = str((yMax - yMin) / height)
 
             # Creating the new label txt file
-            txtFilePath = "label/train/" + fileName[:-5] + ".txt"
+            txtFilePath = "labels/train/" + fileName[:-5] + ".txt"
             print(txtFilePath)
 
             if os.path.exists(txtFilePath):
