@@ -4,4 +4,4 @@ val: images/val
 
 # Classes
 names:
-0: Capybara
+  0: Capybara
