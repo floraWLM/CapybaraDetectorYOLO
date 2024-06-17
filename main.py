@@ -4,7 +4,7 @@ from ultralytics import YOLO
 model = YOLO("yolov8n.yaml")
 
 # Train the model
-results = model.train(data="capy.yaml", epochs=5,device="mps", project="runs/detect/")
+results = model.train(data="capy.yaml", epochs=100,device="mps", project="runs/detect/")
 
 # Validate on training data
 model.val()
