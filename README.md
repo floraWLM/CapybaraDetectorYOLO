@@ -1,4 +1,5 @@
 # CapybaraDetectorYOLO
 Based on a capybara dataset provided, training yolo to detect capybara
 
-<img width="654" alt="Screenshot 2024-06-16 at 4 27 46 PM" src="https://github.com/floraWLM/CapybaraDetectorYOLO/assets/115372520/0853c464-3bac-421b-b00d-5337484cbdb1">
+
+<img width="626" alt="Screenshot 2024-06-17 at 2 01 40 PM" src="https://github.com/floraWLM/CapybaraDetectorYOLO/assets/115372520/a637918f-6724-48c5-adb6-b0d25850bc3e">
