@@ -33,9 +33,9 @@ filename,width,height,class,xmin,ymin,xmax,ymax
 63.jpeg,265,190,capivara,96,20,209,163
 139.jpeg,259,194,capivara,25,1,200,194
 178.jpeg,259,194,capivara,32,18,205,189
-17.jpg,550,364,capivara,82,106,248,259
-17.jpg,550,364,capivara,252,158,385,260
-17.jpg,550,364,capivara,364,161,471,264
+17.jpeg,550,364,capivara,82,106,248,259
+17.jpeg,550,364,capivara,252,158,385,260
+17.jpeg,550,364,capivara,364,161,471,264
 10.jpeg,275,183,capivara,131,37,241,149
 84.jpeg,275,183,capivara,21,14,229,149
 148.jpeg,259,194,capivara,73,34,242,166
@@ -262,7 +262,7 @@ filename,width,height,class,xmin,ymin,xmax,ymax
 180.jpeg,271,186,capivara,202,111,253,160
 46.jpeg,275,183,capivara,139,36,246,183
 46.jpeg,275,183,capivara,1,15,124,170
-16.jpg,728,480,capivara,223,11,642,424
+16.jpeg,728,480,capivara,223,11,642,424
 9.jpeg,286,176,capivara,40,113,155,160
 175.jpeg,275,183,capivara,134,96,264,165
 72.jpeg,307,164,capivara,32,21,242,164

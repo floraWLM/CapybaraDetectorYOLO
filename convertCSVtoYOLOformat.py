@@ -16,13 +16,14 @@ def main():
             yMin = float(row['ymin'])
             yMax = float(row['ymax'])
             X = str((xMin + xMax) / (2 * width))
-            Y = str(1 - (yMin + yMax) / (2 * height))
+            Y = str((yMin + yMax) / (2 * height))
             W = str((xMax - xMin) / width)
             H = str((yMax - yMin) / height)
 
             # Creating the new label txt file
-            txtFilePath = "labels/train/" + fileName[:-5] + ".txt"
+            txtFilePath = "data/labels/train/" + fileName[:-5] + ".txt"
             print(txtFilePath)
+
 
             if os.path.exists(txtFilePath):
                 print("T")
